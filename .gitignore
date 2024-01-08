@@ -1,4 +1,5 @@
 *.hi
 *.o
-solution
 wish_list
+**/fizzbuzz/fizzbuzz
+**/rot_13/rot_13
