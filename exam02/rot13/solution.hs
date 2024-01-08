@@ -1,0 +1,2 @@
+main :: IO ()
+    print "test"
