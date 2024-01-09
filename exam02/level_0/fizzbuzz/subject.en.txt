@@ -1,6 +1,8 @@
 Assignment name  : fizzbuzz
-Expected files   : fizzbuzz.c
-Allowed functions: write
+Expected files   : fizzbuzz.hs
+Allowed modules  : the Prelude
+Allowed functions:
+Forbidden funcs  :
 --------------------------------------------------------------------------------
 
 Write a program that prints the numbers from 1 to 100, each separated by a
