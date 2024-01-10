@@ -1,7 +1,8 @@
 Assignment name  : rot_13
 Expected files   : rot_13.hs
 Allowed modules  : the Prelude
-Allowed functions: System.Environment (getArgs) Data.Char (chr, isAsciiLower, isAsciiUpper, ord)
+Allowed functions: System.Environment (getArgs)
+                   Data.Char (chr, isAsciiLower, isAsciiUpper, ord)
 Forbidden funcs  :
 --------------------------------------------------------------------------------
 
