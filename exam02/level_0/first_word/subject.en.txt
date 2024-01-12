@@ -2,7 +2,7 @@ Assignment name  : first_word
 Expected files   : first_word.hs
 Allowed modules  : the Prelude
 Allowed functions: System.Environment (getArgs)
-Forbidden funcs  : words from Prelude
+Forbidden funcs  : Prelude (words)
 --------------------------------------------------------------------------------
 
 Write a program that takes a string and displays its first word, followed by a
