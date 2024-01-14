@@ -1,5 +1,5 @@
 Assignment name  : snake_to_camel
-Expected files   : snake_to_camel.c
+Expected files   : snake_to_camel.hs
 Allowed modules  : the Prelude
 Allowed functions: System.Environment (getArgs) Data.Char (isAlpha, isSpace, isUpper, isLower)
 Forbidden funcs  : Prelude (words)
