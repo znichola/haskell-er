@@ -31,10 +31,7 @@ main = do
 pass v = if v then "Pass" else "Fail"
 
 run :: (Show a) => [a] -> Bool
-run = testSingle
-
-testSingle :: (Show a) => [a] -> Bool
-testSingle s = show (ftReverse s) == show (ftReverse s)
+run s = show (ftReverse s) == show (ftReverse s)
 
 allEqual :: (Eq a) => [a] -> Bool
 allEqual [] = True
