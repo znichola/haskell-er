@@ -1,7 +1,5 @@
 import Text.Printf (printf)
-import FtTake (ftTake)
-
-infinite = repeat "42"
+import FtReverse (ftReverse)
 
 string = ['a'..'z']
 
@@ -29,15 +27,14 @@ main = do
   printf "%s %s\n" "floats" $ pass $ run floats
   printf "%s %s\n" "doubles" $ pass $ run doubles
   printf "%s %s\n" "empties" $ pass $ run empties
-  printf "%s %s\n" "infinite" $ pass $ run infinite
 
 pass v = if v then "Pass" else "Fail"
 
 run :: (Show a) => [a] -> Bool
-run t = allEqual $ map (testSingle t) takeAmounts
+run = testSingle
 
-testSingle :: (Show a) => [a] -> Int -> Bool
-testSingle s n = show (ftTake n s) == show (take n s)
+testSingle :: (Show a) => [a] -> Bool
+testSingle s = show (ftReverse s) == show (ftReverse s)
 
 allEqual :: (Eq a) => [a] -> Bool
 allEqual [] = True
