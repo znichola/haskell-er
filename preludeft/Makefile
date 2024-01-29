@@ -1,6 +1,6 @@
 parts = part_1 part_2
 part_1 = $(shell (cd part_1 && ls ))
-part_2 = $(shell (cd part_1 && ls ))
+part_2 = $(shell (cd part_2 && ls ))
 
 clean : $(parts)
 
