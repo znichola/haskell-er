@@ -9,7 +9,7 @@ main = do
   printf "%s %s\n" "floats" $ pass $ run 1.34
   printf "%s %s\n" "doubles" $ pass $ run 10e6
 
-pass v = if v then "Pass" else "Fail"
+pass v = if v then "Pass" else error "Fail"
 
 takeAmounts :: [Int]
 takeAmounts = [-3, 0, 1, 4, 6, 4200, -2147483648]

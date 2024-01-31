@@ -28,7 +28,7 @@ main = do
   printf "%s %s\n" "doubles" $ pass $ run doubles
   printf "%s %s\n" "empties" $ pass $ run empties
 
-pass v = if v then "Pass" else "Fail"
+pass v = if v then "Pass" else error "Fail"
 
 run :: (Show a) => [a] -> Bool
 run s = show (ftReverse s) == show (ftReverse s)
