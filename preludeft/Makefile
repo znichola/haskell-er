@@ -11,4 +11,7 @@ $(parts) :
 	{}/{}_test {}/{}_test.hi {}/{}_test.o 2> /dev/null \
 	|| true
 
+test :
+	@./test.sh
+
 .PHONY: $(parts) 

@@ -2,3 +2,4 @@ packages
 *_test
 *.o
 *.hi
+*_trace
