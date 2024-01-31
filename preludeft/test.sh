@@ -41,4 +41,3 @@ for t in $part_2; do
     exec_test $t
     popd &> /dev/null
 done
-

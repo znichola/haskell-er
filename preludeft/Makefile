@@ -8,10 +8,11 @@ $(parts) :
 	cd $@ && \
 	echo $($@) | xargs -n1 | \
 	xargs -I{} rm {}/{} {}/{}.hi {}/{}.o \
-	{}/{}_test {}/{}_test.hi {}/{}_test.o 2> /dev/null \
+	{}/{}_test {}/{}_test.hi {}/{}_test.o \
+	{}_trace 2> /dev/null \
 	|| true
 
 test :
 	@./test.sh
 
-.PHONY: $(parts) 
+.PHONY: $(parts)
