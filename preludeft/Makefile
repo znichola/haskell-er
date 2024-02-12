@@ -12,7 +12,11 @@ $(parts) :
 	{}_trace 2> /dev/null \
 	|| true
 
+$(part_1) :
+	cd part_1/$@ && \
+	runhaskell $@"_test.hs" &> $@"_trace" && echo test this
+
 test :
 	@./test.sh
 
-.PHONY: $(parts)
+.PHONY: $(parts) $(part_1) $(part_2)
