@@ -31,7 +31,7 @@ main = do
   printf "%s %s\n" "empties" $ pass $ run empties
   printf "%s %s\n" "infinite" $ pass $ run infinite
 
-pass v = if v then "Pass" else "Fail"
+pass v = if v then "Pass" else error "Fail"
 
 run :: (Show a) => [a] -> Bool
 run t = allEqual $ map (testSingle t) takeAmounts
